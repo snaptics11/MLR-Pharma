@@ -1,0 +1,113 @@
+@use '../utils' as *;
+
+
+
+/*
+ ::::::::::::::::::::::::::
+  sidebar area css
+ ::::::::::::::::::::::::::
+ */
+
+  
+  /* Search Container Styling */
+  .search-container4 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #C5F66E;
+    border-radius: 53px;
+    margin-right: 12px;
+    transition: all .4s;
+    padding-left: 2px;
+
+    &:hover {
+        background-color: #A1DB39;
+    }
+
+    #search-bar {
+        padding: 10px;
+        width: 0px;
+        border: none;
+        border-radius: 25px;
+        outline: none;
+        font-size: 16px;
+        transition: width 0.4s ease, opacity 0.4s ease;
+
+        &::placeholder {
+            color: var(--Paragraph-Color, #6C757D);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 16px; /* 160% */
+        }
+      }
+        /* Hidden input initially */
+  .hidden {
+    width: 0;
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+    /* Search Button and Icon */
+    .search-icon {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        height: 50px;
+        width: 50px;
+      }
+      
+      .search-icon img {
+        width: 20px;
+        height: 20px;
+        transition: opacity 0.2s ease;
+      }
+      
+      /* Results Section */
+      #results {
+        margin-top: 20px;
+        text-align: center;
+      }
+      
+      /* When the input is active */
+      #search-bar.active {
+        width: 240px;
+        opacity: 1;
+        pointer-events: auto;
+        transition: all .4s;
+      }
+      
+      /* Close Icon */
+      #close-icon {
+        display: none;
+      }
+      
+      #search-toggle.active #search-icon {
+        opacity: 0;
+      }
+      
+      #search-toggle.active #close-icon {
+        display: block;
+        opacity: 1;
+      }
+      
+      /* Animation for close and search icons */
+      #search-icon.hidden,
+      #close-icon.hidden {
+        opacity: 0;
+      }
+  
+      
+  }
+  
+
+  
+
+ 
+ /*
+ ::::::::::::::::::::::::::
+  sidebar area css
+ ::::::::::::::::::::::::::
+ */

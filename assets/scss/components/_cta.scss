@@ -1,0 +1,67 @@
+@use '../utils' as *;
+
+  /*
+ ::::::::::::::::::::::::::
+  CTA AREA CSS
+ ::::::::::::::::::::::::::
+ */
+
+
+// === cta style 2 ===
+
+.cta2-images {
+  position: relative;
+  height: 380px;
+
+  @media #{$md} {
+    margin-top: 40px;
+  }
+
+  @media #{$xs} {
+    margin-top: 40px;
+  }
+  .image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+  }
+
+  .shape {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+}
+
+
+// === cta style 2 ===
+
+// === cta style 3 ===
+
+.cta3 {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .cta3-btns {
+    text-align: end;
+    @media #{$md} {
+      text-align: start;
+      margin-top: 20px;
+    }
+    @media #{$xs} {
+      text-align: start;
+      margin-top: 20px;
+    }
+  }
+}
+
+// === cta style 3 ===
+
+   /*
+ ::::::::::::::::::::::::::
+  CTA AREA CSS
+ ::::::::::::::::::::::::::
+ */

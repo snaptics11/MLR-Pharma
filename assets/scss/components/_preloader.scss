@@ -1,0 +1,185 @@
+
+@use '../utils' as *;
+
+   /*
+ ::::::::::::::::::::::::::
+  PRELOADER AREA CSS
+ ::::::::::::::::::::::::::
+ */
+
+.preloader-sec {
+   position: fixed;
+   z-index: 99999;
+   background: rgb(24,22,49);
+   background: linear-gradient(90deg, rgba(24,22,49,1) 0%, rgba(16,0,43,1) 50%, rgba(24,22,49,1) 100%);
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   u {
+      display: block;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border-top: 5px solid #bdfc4e;
+      position: relative;
+      margin: auto;
+      box-sizing: border-box;
+      animation: 2s Rotate linear infinite ;
+      -webkit-animation: 2s Rotate linear infinite;
+      color: #fff;
+      line-height: 128px;
+      text-align: center;
+      text-decoration: none; 
+    }
+    @keyframes Rotate {
+      0% {
+        transform: rotate(0deg)
+      }
+      100% {
+        transform: rotate(360deg)
+      }
+    }
+    @-webkit-keyframes Rotate {
+      0% {
+        -webkit-transform: rotate(0deg)
+      }
+      100% {
+        -webkit-transform: rotate(360deg)
+      }
+    }
+    u:before,
+    u:after {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 180px;
+      height: 180px;
+      top: -5px;
+      left: 0;
+      border-radius: 50%;
+      box-sizing: border-box
+    }
+    
+    u:before {
+      border-top: 5px solid #4A43DD;
+      transform: rotate(180deg)
+    }
+    
+    u:after {
+      border-top: 5px solid #C27A1B;
+      transform: rotate(240deg)
+    }
+    
+    u i {
+      animation: 8s deRotate linear infinite;
+      -webkit-animation: 8s deRotate linear infinite;
+      display: block;
+      width: 180px;
+      height: 180px;
+      position: absolute;
+      top: -5px;
+      left: 0;
+    }
+    
+    @keyframes deRotate {
+      50% {
+        transform: rotate(0deg)
+      }
+      100% {
+        transform: rotate(0deg)
+      }
+    }
+    
+    @-webkit-keyframes deRotate {
+      50% {
+        -webkit-transform: rotate(-180deg)
+      }
+      100% {
+        -webkit-transform: rotate(-380deg)
+      }
+    }
+
+
+
+
+//  middle way 
+.app-loader {
+   position: absolute;
+   top: 50%;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   text-align: center;
+   margin-top: -60px;
+ }
+ 
+ .app-loader,
+ .app-loader svg {
+   height: auto;
+ }
+ 
+ .app-loader svg {
+   width: 90px;
+   height: 120px;
+   opacity: 0.9;
+ }
+ 
+ .app-loader svg path {
+   transform-origin: 50% 0;
+   fill: #fff;
+ }
+ 
+ @keyframes skew {
+   0% {
+     transform: skewY(0deg);
+   }
+   25% {
+     transform: skewY(2deg);
+   }
+   75% {
+     transform: skewY(-2deg);
+   }
+   100% {
+     transform: skewY(0deg);
+   }
+ }
+ 
+ @keyframes pop {
+   from {
+     opacity: 1;
+   }
+   to {
+     opacity: 0;
+     transform: translate(0, -0.5rem);
+   }
+ }
+ 
+ #path3859 {
+   animation: pop 2s infinite;
+ }
+ 
+ #path3857 {
+   animation: pop 3.5s infinite;
+ }
+ 
+ #path3855 {
+   animation: pop 2.5s infinite;
+ }
+ 
+ #path3728 {
+   fill: #4A43DD;
+   animation: skew 1s infinite;
+ }
+}
+
+
+
+    /*
+ ::::::::::::::::::::::::::
+  PRELOADER AREA CSS
+ ::::::::::::::::::::::::::
+ */

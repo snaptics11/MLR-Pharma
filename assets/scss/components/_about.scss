@@ -1,0 +1,285 @@
+@use '../utils' as *;
+
+  /*
+ ::::::::::::::::::::::::::
+  ABOUT AREA CSS
+ ::::::::::::::::::::::::::
+ */
+
+//----  about 1 style ----
+
+.about1-images {
+  position: relative;
+  height: 680px;
+
+  @media #{$xs} {
+     height: 1000px;
+  }
+
+  .image2 {
+    @media #{$xs} {
+      top: 360px;
+   }
+  }
+
+  .shape {
+    left: -150px;
+  }
+}
+
+//----  about 1 style ----
+
+//----  about 2 style ----
+
+.about2-images {
+  .bg-shape {
+    margin-left: 0;
+    position: relative;
+    top: -20px;
+    .stop-color1 {
+      stop-color: #F7F7FE;
+    }
+    .stop-color2 {
+      stop-color: #F7F7FE;
+    }
+  }
+}
+
+.about2-features {
+  .about-check-list {
+    ul {
+      li {
+        display: flex;
+        align-items: center;
+
+        span.check {
+          display: inline-block;
+          height: 18px;
+          width: 18px;
+          line-height: 18px;
+          text-align: center;
+          background-color: #0A0571;
+          color: #fff;
+          font-size: 12px;
+          border-radius: 50%;
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+}
+
+//----  about 2 style ----
+
+//----  about 3 style ----
+
+.about3 {
+  .bottom-text {
+    transition: all .4s;
+    &:hover {
+      transition: all .4s;
+      color: #058C42;
+    }
+  }
+
+  .counter-box {
+    position: absolute;
+    bottom: 100px;
+    left: -80px;
+
+    @media #{$xs} {
+      left: 0;
+    }
+  }
+}
+
+.about-page-sec1 {
+  .bottom-text {
+    transition: all .4s;
+    &:hover {
+      transition: all .4s;
+      color: var(--vtc-bg-main1);
+    }
+  }
+
+  .counter-box {
+    position: absolute;
+    bottom: 100px;
+    left: -80px;
+
+    @media #{$xs} {
+      left: 0;
+    }
+  }
+}
+
+.about3-image3 {
+  @media #{$md} {
+    height: 300px;
+
+    img {
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  }
+}
+
+
+//----  about 3 style ----
+
+//----  about 4 style ----
+
+.about4-images-area {
+  height: 517px;
+
+  @media #{$xs} {
+    height: 400px;
+  }
+  .image {
+    @media #{$md} {
+      margin-left: 70px;
+    }
+  }
+
+  .single-icon {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    line-height: 130px;
+    text-align: center;
+
+    @media #{$xs} {
+      height: 80px;
+      width: 80px;
+      line-height: 80px;
+    }
+
+    img {
+      transition: all .4s;
+    }
+
+    &:hover {
+      img {
+        transition: all .4s;
+        transform: scaleY(180deg);
+      }
+    }
+
+    &.icon1 {
+      border-radius: 50%;
+      background: #10002B;
+      box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.08);
+      position: absolute;
+      top: 50px;
+      left: 0;
+    }
+    &.icon2 {
+      background-color: #C5F66E;
+      box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.08);
+      position: absolute;
+      top: 205px;
+      left: -50px;
+
+      @media #{$md} {
+        left: 0;
+      }
+      @media #{$xs} {
+        left: 0;
+        top: 160px;
+      }
+
+    }
+    &.icon3 {
+      background-color: #fff;
+      box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.08);
+      position: absolute;
+      bottom: 30px;
+      left: 0;
+    }
+  }
+}
+
+.about4-features {
+  .about-check-list {
+    ul {
+      li {
+        display: flex;
+        align-items: center;
+
+        span.check {
+          display: inline-block;
+          height: 18px;
+          width: 18px;
+          line-height: 18px;
+          text-align: center;
+          background-color: var(--vtc-text-title-1);
+          color: #fff;
+          font-size: 12px;
+          border-radius: 50%;
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+}
+
+//----  about 4 style ----
+
+
+//----  about 5 style ----
+
+.about-check-list5 {
+  ul {
+    li {
+      display: flex;
+      align-items: center;
+
+      span.check {
+        display: inline-block;
+        height: 18px;
+        width: 18px;
+        line-height: 18px;
+        text-align: center;
+        background-color: var(--vtc-bg-main5);
+        color: #fff;
+        font-size: 12px;
+        border-radius: 50%;
+        margin-right: 6px;
+      }
+    }
+  }
+}
+
+//----  about 5 style ----
+
+//----  about values style ----
+
+.our-values-box {
+  display: flex;
+  align-items: start;
+  margin-top: 20px;
+
+  .icon {
+    margin-right: 8px;
+    margin-top: 4px;
+    span {
+      display: inline-block;
+      height: 20px;
+      width: 20px;
+      text-align: center;
+      line-height: 20px;
+      font-size: 12px;
+      color: var(--vtc-bg-main1);
+      border-radius: 50%;
+      border: 1px solid var(--vtc-bg-main1);
+    }
+  }
+}
+
+//----  about values style ----
+
+/*
+ ::::::::::::::::::::::::::
+  ABOUT AREA CSS
+ ::::::::::::::::::::::::::
+ */

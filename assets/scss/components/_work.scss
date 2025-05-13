@@ -1,0 +1,76 @@
+@use '../utils' as *;
+
+  /*
+ ::::::::::::::::::::::::::
+  WORK AREA CSS
+ ::::::::::::::::::::::::::
+ */
+
+//=== work style 5 ====
+
+.work5-box {
+  margin-top: 50px;
+  padding: 24px;
+  background-color: #FAF7F5;
+  transition: all .4s;
+
+  .icon {
+    border-radius: 50px;
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.08);
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #E8EDEC;
+    transition: all .4s;
+  }
+  h3 {
+    a {
+      transition: all .4s;
+      padding-top: 20px;
+    }
+  }
+  p {
+    padding: 16px 0px;
+    transition: all .4s;
+  }
+
+  .learn {
+    transition: all .4s;
+    span {
+      display: inline-block;
+      transform: rotate(-45deg);
+    }
+  }
+
+  &:hover {
+    transition: all .4s;
+    transform: translateY(-10px);
+    background-color: var(--vtc-bg-main5);
+
+    .heading5 {
+      h3 {
+        a {
+          transition: all .4s;
+          color: var(--vtc-bg-white);
+        }
+      }
+      p {
+        color: var(--vtc-text-pera-2);
+        transition: all .4s;
+      }
+      .learn {
+        transition: all .4s;
+        color: var(--vtc-bg-white);
+      }
+    }
+  }
+}
+
+//=== work style 5 ====
+
+/*
+ ::::::::::::::::::::::::::
+  WORK AREA CSS
+ ::::::::::::::::::::::::::
+ */

@@ -1,0 +1,569 @@
+@use '../utils' as *;
+
+  /*
+ ::::::::::::::::::::::::::
+  TEAM AREA CSS
+ ::::::::::::::::::::::::::
+ */
+
+// ==== team style 1 ====
+
+.team-box1 {
+  transition: all .4s;
+  .image-area {
+    position: relative;
+    overflow: hidden;
+    .image {
+      overflow: hidden;
+      border-radius: 8px;
+      img {
+        transition: all .4s;
+        width: 100%;
+        z-index: 2;
+      }
+    }
+
+    .arrow {
+      height: 36px;
+      width: 36px;
+      display: inline-block;
+      text-align: center;
+      line-height: 36px;
+      background-color: #0A0571;
+      border-radius: 50%;
+      font-size: 16px;
+      color: #fff;
+      position: absolute;
+      top: 4px;
+      right: 4px;
+      z-index: 2;
+      transition: all .3s;
+      opacity: 0;
+      transform: scale(1.4) rotate(-45deg);
+      z-index: 3;
+    }
+
+    .icons {
+      position: absolute;
+      left: 30px;
+      bottom: 70px;
+      z-index: 2;
+      transform: translateX(-90px);
+      opacity: 0;
+      transition: all .4s;
+      ul {
+        li {
+          a {
+            display: inline-block;
+            height: 32px;
+            width: 32px;
+            color: #10002B;
+            line-height: 32px;
+            text-align: center;
+            font-size: 16px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin: 5px 0px;
+            transition: all .4s;
+
+            &:hover {
+              transition: all .4s;
+              background-color: #0A0571;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 60px;
+      width: 60px;
+      background-image: url(../img/shapes/team-box-after.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transform: translateY(-60px) translateX(60px);
+      transition: all .4s;
+      z-index: 2;
+    }
+  }
+
+  &:hover {
+    transition: all .4s;
+    transform: translateY(-10px);
+    .image-area {
+      .image {
+        img {
+          transition: all .4s;
+          transform: rotate(2deg) scale(1.1);
+        }
+      }
+
+
+      &::after {
+        transition: all .4s;
+        transform: translateY(0) translateX(0);
+      }
+
+      .arrow {
+        transition: all .6s;
+        opacity: 1;
+        transform: scale(1) rotate(-45deg);
+      }
+
+      .icons {
+        transform: translateX(0);
+        opacity: 1;
+        transition: all .4s;
+      }
+    }
+  }
+
+}
+
+// ==== team style 1 ====
+
+// ==== team style 3 ====
+
+.team-box3 {
+  transition: all .4s;
+  .image-area {
+    position: relative;
+    overflow: hidden;
+    .image {
+      overflow: hidden;
+      border-radius: 8px;
+      img {
+        transition: all .4s;
+        width: 100%;
+        z-index: 2;
+      }
+    }
+
+    .arrow {
+      height: 36px;
+      width: 36px;
+      display: inline-block;
+      text-align: center;
+      line-height: 36px;
+      background-color: #058C42;
+      border-radius: 50%;
+      font-size: 16px;
+      color: #fff;
+      position: absolute;
+      top: 4px;
+      right: 4px;
+      z-index: 2;
+      transition: all .3s;
+      opacity: 0;
+      transform: scale(1.4) rotate(-45deg);
+      z-index: 3;
+    }
+
+    .icons {
+      position: absolute;
+      left: 30px;
+      bottom: 70px;
+      z-index: 2;
+      transform: translateX(-90px);
+      opacity: 0;
+      transition: all .4s;
+      ul {
+        li {
+          a {
+            display: inline-block;
+            height: 32px;
+            width: 32px;
+            color: #10002B;
+            line-height: 32px;
+            text-align: center;
+            font-size: 16px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin: 5px 0px;
+            transition: all .4s;
+
+            &:hover {
+              transition: all .4s;
+              background-color: #058C42;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 60px;
+      width: 60px;
+      background-image: url(../img/shapes/team-box-after.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transform: translateY(-60px) translateX(60px);
+      transition: all .4s;
+      z-index: 2;
+    }
+  }
+
+  &:hover {
+    transition: all .4s;
+    transform: translateY(-10px);
+    .image-area {
+      .image {
+        img {
+          transition: all .4s;
+          transform: rotate(2deg) scale(1.1);
+        }
+      }
+
+
+      &::after {
+        transition: all .4s;
+        transform: translateY(0) translateX(0);
+      }
+
+      .arrow {
+        transition: all .6s;
+        opacity: 1;
+        transform: scale(1) rotate(-45deg);
+      }
+
+      .icons {
+        transform: translateX(0);
+        opacity: 1;
+        transition: all .4s;
+      }
+    }
+  }
+
+}
+
+// ==== team style 3 ====
+
+// ==== team style 4 ====
+
+.team-box4 {
+  transition: all .4s;
+  .image-area {
+    position: relative;
+    overflow: hidden;
+    .image {
+      overflow: hidden;
+      border-radius: 8px;
+      img {
+        transition: all .4s;
+        width: 100%;
+        z-index: 2;
+      }
+    }
+
+
+    .icons {
+      position: absolute;
+      left: 30px;
+      bottom: 70px;
+      z-index: 2;
+      transform: translateX(-90px);
+      opacity: 0;
+      transition: all .4s;
+      ul {
+        li {
+          a {
+            display: inline-block;
+            height: 32px;
+            width: 32px;
+            color: var( --vtc-text-title-1);
+            line-height: 32px;
+            text-align: center;
+            font-size: 16px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin: 5px 0px;
+            transition: all .4s;
+
+            &:hover {
+              transition: all .4s;
+              background-color: var(--vtc-bg-main4);
+              color: var( --vtc-text-title-1);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &:hover {
+    transition: all .4s;
+    transform: translateY(-10px);
+    .image-area {
+      .image {
+        img {
+          transition: all .4s;
+          transform: rotate(2deg) scale(1.1);
+        }
+      }
+
+
+      .icons {
+        transform: translateX(0);
+        opacity: 1;
+        transition: all .4s;
+      }
+    }
+  }
+
+}
+
+// ==== team style 4 ====
+
+// ==== team style 5 ====
+
+.team-box5 {
+  transition: all .4s;
+  .image-area {
+    position: relative;
+    overflow: hidden;
+    .image {
+      overflow: hidden;
+      border-radius: 0px;
+      img {
+        transition: all .4s;
+        width: 100%;
+        z-index: 2;
+        transform: scale(1.1);
+      }
+    }
+
+
+    .icons {
+      position: absolute;
+      left: 30px;
+      bottom: 70px;
+      z-index: 2;
+      transform: translateX(-90px);
+      opacity: 0;
+      transition: all .4s;
+      ul {
+        li {
+          a {
+            display: inline-block;
+            height: 32px;
+            width: 32px;
+            color: var( --vtc-text-title-1);
+            line-height: 32px;
+            text-align: center;
+            font-size: 16px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin: 5px 0px;
+            transition: all .4s;
+
+            &:hover {
+              transition: all .4s;
+              background-color: var(--vtc-bg-main5);
+              color: var(--vtc-text-white);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &:hover {
+    transition: all .4s;
+    transform: translateY(-10px);
+    .image-area {
+      .image {
+        img {
+          transition: all .4s;
+          transform: rotate(2deg) scale(1.1);
+        }
+      }
+
+
+      .icons {
+        transform: translateX(0);
+        opacity: 1;
+        transition: all .4s;
+      }
+    }
+  }
+
+}
+
+// ==== team style 5 ====
+
+// ==== about team style ====
+
+.about-team-box {
+  transition: all .4s;
+  .image-area {
+    position: relative;
+    overflow: hidden;
+    .image {
+      overflow: hidden;
+      border-radius: 0px;
+      img {
+        transition: all .4s;
+        width: 100%;
+        z-index: 2;
+        transform: scale(1.1);
+      }
+    }
+
+
+    .icons {
+      position: absolute;
+      left: 30px;
+      bottom: 70px;
+      z-index: 2;
+      transform: translateX(-90px);
+      opacity: 0;
+      transition: all .4s;
+      ul {
+        li {
+          a {
+            display: inline-block;
+            height: 32px;
+            width: 32px;
+            color: var( --vtc-text-title-1);
+            line-height: 32px;
+            text-align: center;
+            font-size: 16px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin: 5px 0px;
+            transition: all .4s;
+
+            &:hover {
+              transition: all .4s;
+              background-color: var(--vtc-bg-main1);
+              color: var(--vtc-text-white);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &:hover {
+    transition: all .4s;
+    transform: translateY(-10px);
+    .image-area {
+      .image {
+        img {
+          transition: all .4s;
+          transform: rotate(2deg) scale(1.1);
+        }
+      }
+
+
+      .icons {
+        transform: translateX(0);
+        opacity: 1;
+        transition: all .4s;
+      }
+    }
+  }
+
+}
+
+// ==== about team style ====
+
+// ==== details team style ====
+
+.team-details-area {
+  .heading {
+    padding: 24px;
+    .reating {
+      li {
+        display: inline-block;
+        padding-top: 12px;
+        padding-bottom: 6px;
+      }
+      .star {
+        color: var(--vtc-bg-main1);
+      }
+      .text {
+        color: var(--Text-Color, #10002B);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px; /* 100% */
+      }
+    }
+
+    .team-details-list {
+      ul {
+        li {
+          color: var(--Text-Color, #10002B);
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 18px; /* 100% */
+          padding-top: 16px;
+          span {
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            text-align: center;
+            line-height: 20px;
+            font-size: 12px;
+            color: var(--vtc-bg-main1);
+            border-radius: 50%;
+            border: 1px solid var(--vtc-bg-main1);
+            transform: translateY(-2px);
+            margin-right: 4px;
+          }
+        }
+      }
+    }
+
+    .social {
+      margin: 20px 0px 28px 0px;
+      ul {
+        li {
+          display: inline-block;
+          a {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+            text-align: center;
+            background-color: #E0E3FA;
+            border-radius: 50%;
+            color: var(--vtc-text-title-1);
+            transition: all .4s;
+            margin-right: 5px;
+
+            &:hover {
+              transition: all .4s;
+              color: var(--vtc-text-white);
+              background-color: var(--vtc-bg-main1);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// ==== details team style ====
+
+   /*
+ ::::::::::::::::::::::::::
+  TEAM AREA CSS
+ ::::::::::::::::::::::::::
+ */

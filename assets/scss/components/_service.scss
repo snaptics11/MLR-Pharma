@@ -1,0 +1,739 @@
+@use '../utils' as *;
+
+  /*
+ ::::::::::::::::::::::::::
+  SERVICE AREA CSS
+ ::::::::::::::::::::::::::
+ */
+
+//====  service 1 style ====
+
+.service-box1 {
+  transition: all .4s;
+  background-color: #fff;
+  border-radius: 4px;
+  .image {
+    overflow: hidden;
+    border-radius: 4px 4px 0px 0px;
+
+    img {
+      transition: all .4s;
+    }
+  }
+  .heading1 {
+    padding: 24px;
+
+    h4 {
+      a {
+        transform: all .4s;
+        &:hover {
+          transition: all .4s;
+          color: #4A43DD;
+        }
+      }
+    }
+
+    .learn {
+      display: inline-block;
+      overflow: hidden;
+
+      span {
+        display: inline-block;
+        transform: rotate(-45deg) translateX(0px) translateY(1px);
+        font-size: 17px;
+        transition: all .4s;
+      }
+      .arrow2 {
+        transform: translateY(-8px) rotate(-45deg) translateX(-52px);
+        transition: all .4s;
+        opacity: 0;
+      }
+      .arrow1 {
+        transition: all .4s;
+        opacity: 1;
+      }
+    
+      &:hover {
+        color: #4A43DD;
+        .arrow2 {
+          transform: translateY(-12px) rotate(-45deg) translateX(-18px);
+          transition: all .4s;
+          opacity: 1;
+        }
+        .arrow1 {
+          transition: all .4s;
+          transform: translateY(-7px) rotate(-45deg) translateX(45px);
+          opacity: 0;
+        }
+      }
+
+    }
+  }
+  &:hover {
+    transition: all .4s;
+    transform: translateY(-10px);
+
+    .image {
+      position: relative;
+      img {
+        transition: all .4s;
+        transform: scale(1.1) rotate(2deg);
+      }
+    }
+    .heading1 {
+      .learn {
+        color: #4A43DD;
+        .arrow2 {
+          transform: translateY(-12px) rotate(-45deg) translateX(-18px);
+          transition: all .4s;
+          opacity: 1;
+        }
+        .arrow1 {
+          transition: all .4s;
+          transform: translateY(-7px) rotate(-45deg) translateX(45px);
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+
+//====  service 1 style ====
+
+//====  service 2 style ====
+
+.service2-single-slider {
+  margin: 0px 15px;
+  position: relative;
+  
+  .image {
+    overflow: hidden;
+    border-radius: 8px;
+    img {
+      width: 100%;
+      transition: all .4s;
+    }
+  }
+  .heading-area {
+    padding: 24px;
+    background-color: #0A0571;
+    margin: 0px 24px;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 24px;
+    width: 83%;
+    transition: all .4s;
+    transform: translateY(100px);
+    opacity: 0;
+
+    a {
+      &:hover {
+        color: #fff;
+      }
+    }
+
+    .learn {
+      span {
+        display: inline-block;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  .arrow {
+    height: 36px;
+    width: 36px;
+    display: inline-block;
+    text-align: center;
+    line-height: 36px;
+    background-color: #0A0571;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    z-index: 2;
+    transition: all .3s;
+    opacity: 0;
+    transform: scale(1.4) rotate(-45deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 60px;
+    width: 60px;
+    background-image: url(../img/shapes/service7-box-after.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateY(-60px) translateX(60px);
+    transition: all .4s;
+  }
+
+  &:hover {
+    transition: all .4s;
+
+    .heading-area {
+      transition: all .4s;
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .image {
+      img {
+        transition: all .4s;
+        transform: rotate(2deg) scale(1.1);
+      }
+    }
+
+    .arrow {
+      transition: all .6s;
+      opacity: 1;
+      transform: scale(1) rotate(-45deg);
+    }
+
+      &::after {
+        transition: all .4s;
+        transform: translateY(0) translateX(0);
+      }
+  }
+}
+
+.service2-slider {
+  //-- Testimonial dots ---
+.slick-dots {
+  margin: 0;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  margin-top: 0px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin-left: -62px;
+
+  @media #{$md} {
+    bottom: -25px;
+  }
+  @media #{$xs} {
+    bottom: -25px;
+  }
+  
+    li {
+      margin: 0 0.25rem;
+    }
+  
+    button {
+      display: block;
+      width: 8px;
+      height: 8px;
+      padding: 0;
+      margin: 0px 5px;
+      border: none;
+      border-radius: 100%;
+      background-color: #DEE0EC;
+      text-indent: -9999px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        height: 18px;
+        width: 18px;
+        border: 5px solid #DEE0EC;
+        border-radius: 50%;
+        opacity: 0;
+        transition: all .4s;
+      }
+    }
+    li.slick-active button {
+      background-color: #0A0571;
+      &::after {
+        opacity: 1;
+        transition: all .4s;
+      }
+    }
+}
+}
+
+//====  service 2 style ====
+
+//====  service 3 style ====
+
+.service3-tab-btns {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 50px;
+  .nav {
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 8px 16px;
+      border-radius: 8px;
+      background: #F6F8FA;
+      margin: 8px 0px;
+      transition: all .4s;
+
+      span.angle {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        text-align: center;
+        background-color: #058C42;
+        border-radius: 50%;
+        color: #F6F8FA;
+        transition: all .4s;
+      }
+
+      &.active {
+        background-color: #058C42;
+        transition: all .4s;
+        span.angle {
+          background-color: #F6F8FA;
+          color: #058C42;
+          transition: all .4s;
+        }
+      }
+      &:hover {
+        background-color: #058C42;
+        transition: all .4s;
+        span.angle {
+          background-color: #F6F8FA;
+          color: #058C42;
+          transition: all .4s;
+        }
+        color: #fff;
+      }
+
+    }
+  }
+}
+.service3-tab-content {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 32px;
+
+  .image {
+    overflow: hidden;
+    border-radius: 8px;
+    img {
+      transition: all .4s;
+    }
+  }
+  &:hover {
+    .image {
+      img {
+        transition: all .4s;
+        transform: scale(1.1) rotate(2deg);
+      }
+    }
+  }
+}
+
+//====  service 3 style ====
+
+//====  service 4 style ====
+
+.service4-buttons {
+  text-align: end;
+  @media #{$md} {
+    text-align: start;
+    margin-top: 20px;
+  }
+  @media #{$xs} {
+    text-align: start;
+    margin-top: 20px;
+  }
+}
+
+.service4-single-slider {
+  border-radius: 8px;
+    background: var(--Background, rgba(227, 236, 251, 0.50));
+    padding: 24px;
+    margin: 0px 10px;
+  .icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background: var(--White-Color, #FFF);
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.08);
+    line-height: 50px;
+    text-align: center;
+
+    img {
+      margin-left: 14px;
+      padding-top: 13px;
+    }
+  }
+  .learn {
+    display: inline-block;
+    overflow: hidden;
+    transition: all .4s;
+
+    span {
+      display: inline-block;
+      transform: rotate(-45deg) translateX(0px) translateY(1px);
+      font-size: 17px;
+      transition: all .4s;
+    }
+    .arrow2 {
+      transform: translateY(-8px) rotate(-45deg) translateX(-52px);
+      transition: all .4s;
+      opacity: 0;
+    }
+    .arrow1 {
+      transition: all .4s;
+      opacity: 1;
+    }
+  
+    &:hover {
+      color: #4A43DD;
+      .arrow2 {
+        transform: translateY(-12px) rotate(-45deg) translateX(-18px);
+        transition: all .4s;
+        opacity: 1;
+      }
+      .arrow1 {
+        transition: all .4s;
+        transform: translateY(-7px) rotate(-45deg) translateX(45px);
+        opacity: 0;
+      }
+    }
+  }
+
+  &:hover {
+    .heading4 {
+      .learn {
+        color: #4A43DD;
+        .arrow2 {
+          transform: translateY(-12px) rotate(-45deg) translateX(-18px);
+          transition: all .4s;
+          opacity: 1;
+        }
+        .arrow1 {
+          transition: all .4s;
+          transform: translateY(-7px) rotate(-45deg) translateX(45px);
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+
+.service4-buttons {
+  button {
+    border: none;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    border: 1px solid #10002B;
+    background: transparent;
+    border-radius: 50%;
+    margin-left: 8px;
+    transition: all .4s;
+
+    &:hover {
+      transition: all .4s;
+      background: var(--vtc-bg-main4);
+      border: 1px solid var(--vtc-bg-main4);
+    }
+  }
+ }
+
+
+//====  service 4 style ====
+
+//====  service 5 style ====
+
+.service5-box {
+  margin-top: 30px;
+  padding: 24px;
+  background-color: var(--vtc-bg-white);
+  transition: all .4s;
+
+  .icon {
+    border-radius: 50px;
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.08);
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #E8EDEC;
+    transition: all .4s;
+  }
+  h3 {
+    a {
+      transition: all .4s;
+      padding-top: 20px;
+    }
+  }
+  p {
+    padding: 16px 0px;
+    transition: all .4s;
+  }
+
+  .learn {
+    transition: all .4s;
+    span {
+      display: inline-block;
+      transform: rotate(-45deg);
+    }
+  }
+
+  &:hover {
+    transition: all .4s;
+    transform: translateY(-10px);
+    background-color: var(--vtc-bg-main5);
+
+    .heading5 {
+      h3 {
+        a {
+          transition: all .4s;
+          color: var(--vtc-bg-white);
+        }
+      }
+      p {
+        color: var(--vtc-text-pera-2);
+        transition: all .4s;
+      }
+      .learn {
+        transition: all .4s;
+        color: var(--vtc-bg-white);
+      }
+    }
+  }
+}
+
+//====  service 5 style ====
+
+//==== about service style ====
+
+.about-service-buttons {
+    text-align: end;
+    @media #{$md} {
+      text-align: start;
+      margin-top: 20px;
+    }
+    @media #{$xs} {
+      text-align: start;
+      margin-top: 20px;
+    }
+  button {
+    border: none;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    border: 1px solid #10002B;
+    background: transparent;
+    border-radius: 50%;
+    margin-left: 8px;
+    transition: all .4s;
+
+    &:hover {
+      transition: all .4s;
+      background: var(--vtc-bg-main1);
+      border: 1px solid var(--vtc-bg-main1);
+      color: var(--vtc-bg-white);
+    }
+  }
+ }
+
+ .about-service-single-slider {
+  border-radius: 0px;
+    background: var(--vtc-text-white);
+    padding: 24px;
+    margin: 0px 10px;
+    transition: all .4s;
+  .icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background: #EDECFC;
+    line-height: 50px;
+    text-align: center;
+
+    img {
+      margin-left: 14px;
+      padding-top: 13px;
+    }
+  }
+  .learn {
+    display: inline-block;
+    overflow: hidden;
+    transition: all .4s;
+
+    span {
+      display: inline-block;
+      transform: rotate(-45deg) translateX(0px) translateY(1px);
+      font-size: 17px;
+      transition: all .4s;
+    }
+    .arrow2 {
+      transform: translateY(-8px) rotate(-45deg) translateX(-52px);
+      transition: all .4s;
+      opacity: 0;
+    }
+    .arrow1 {
+      transition: all .4s;
+      opacity: 1;
+    }
+  
+    &:hover {
+      color: #C5F66E;
+      .arrow2 {
+        transform: translateY(-12px) rotate(-45deg) translateX(-18px);
+        transition: all .4s;
+        opacity: 1;
+      }
+      .arrow1 {
+        transition: all .4s;
+        transform: translateY(-7px) rotate(-45deg) translateX(45px);
+        opacity: 0;
+      }
+    }
+  }
+
+  &:hover {
+    background-color: var(--vtc-bg-main1);
+    .heading4 {
+      h4 {
+        a {
+          transition: all .4s;
+          color: var(--vtc-text-white);
+        }
+      }
+      p {
+        transition: all .4s;
+        color: var(--vtc-text-white);
+      }
+      .learn {
+        color: var(--vtc-text-white);
+        .arrow2 {
+          transform: translateY(-12px) rotate(-45deg) translateX(-18px);
+          transition: all .4s;
+          opacity: 1;
+        }
+        .arrow1 {
+          transition: all .4s;
+          transform: translateY(-7px) rotate(-45deg) translateX(45px);
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+
+//==== about service style ====
+
+//==== research page box style ====
+
+.research-box {
+  transition: all .4s;
+  background-color: #F1F5FD;
+  border-radius: 0px;
+  .image {
+    overflow: hidden;
+    border-radius: 0px 0px 0px 0px;
+
+    img {
+      transition: all .4s;
+    }
+  }
+  .heading1 {
+    padding: 24px;
+
+    h4 {
+      a {
+        transform: all .4s;
+        &:hover {
+          transition: all .4s;
+          color: #4A43DD;
+        }
+      }
+    }
+
+    .learn {
+      display: inline-block;
+      overflow: hidden;
+
+      span {
+        display: inline-block;
+        transform: rotate(-45deg) translateX(0px) translateY(1px);
+        font-size: 17px;
+        transition: all .4s;
+      }
+      .arrow2 {
+        transform: translateY(-8px) rotate(-45deg) translateX(-52px);
+        transition: all .4s;
+        opacity: 0;
+      }
+      .arrow1 {
+        transition: all .4s;
+        opacity: 1;
+      }
+    
+      &:hover {
+        color: #4A43DD;
+        .arrow2 {
+          transform: translateY(-12px) rotate(-45deg) translateX(-18px);
+          transition: all .4s;
+          opacity: 1;
+        }
+        .arrow1 {
+          transition: all .4s;
+          transform: translateY(-7px) rotate(-45deg) translateX(45px);
+          opacity: 0;
+        }
+      }
+
+    }
+  }
+  &:hover {
+    transition: all .4s;
+    transform: translateY(-10px);
+
+    .image {
+      position: relative;
+      img {
+        transition: all .4s;
+        transform: scale(1.1) rotate(2deg);
+      }
+    }
+    .heading1 {
+      .learn {
+        color: #4A43DD;
+        .arrow2 {
+          transform: translateY(-12px) rotate(-45deg) translateX(-18px);
+          transition: all .4s;
+          opacity: 1;
+        }
+        .arrow1 {
+          transition: all .4s;
+          transform: translateY(-7px) rotate(-45deg) translateX(45px);
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+
+
+//==== research page box style ====
+
+/*
+ ::::::::::::::::::::::::::
+  SERVICE AREA CSS
+ ::::::::::::::::::::::::::
+*/

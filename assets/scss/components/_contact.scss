@@ -1,0 +1,116 @@
+@use '../utils' as *;
+
+/*
+ ::::::::::::::::::::::::::
+  CONTACT AREA CSS
+ ::::::::::::::::::::::::::
+ */
+
+// ==== contact sytle ====
+
+.contact-time {
+
+    ul {
+        margin-top: 20px;
+        li {
+            display: inline-block;
+            margin-right: 40px;
+            img {
+                transform: translateY(-2px);
+            }
+        }
+    }
+}
+
+.contact-box-p {
+    display: flex;
+    align-items: center;
+    .icon {
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        background-color: #E0E3FA;
+        transition: all .4s;
+        img {
+            transition: all .4s;
+        }
+    }
+
+    a {
+        transition: all .4s;
+        &:hover {
+            color: var(--vtc-bg-main1);
+            transition: all .4s;
+        }
+    }
+
+    &:hover {
+        transition: all .4s;
+        .icon {
+            transition: all .4s;
+            background-color: var(--vtc-bg-main1);
+            img {
+                transition: all .4s;
+                transform: rotateY(180deg);
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+}
+
+.contact-form {
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+    padding: 24px;
+
+    .single-input {
+
+        label {
+            color: var(--Text-Color, #10002B);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 16px; /* 100% */
+            margin-bottom: 0px;
+        }
+
+        input, textarea {
+            padding: 15px;
+            border: none;
+            border: 0px;
+            width: 100%;
+            margin-top: 10px;
+            border: 1px solid #EAEBEB;
+        
+            &:focus {
+              outline: none;
+            }
+        
+            &::placeholder {
+              color: var(--Paragraph-Color, #6C757D);
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 16px; /* 100% */
+            }
+          }
+    }
+}
+
+
+.contact-map-page {
+    iframe {
+        width: 100%;
+        margin-bottom: -7px;
+        height: 600px;
+    }
+}
+// ==== contact sytle ====
+
+/*
+ ::::::::::::::::::::::::::
+  CONTACT AREA CSS
+ ::::::::::::::::::::::::::
+ */

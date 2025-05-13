@@ -1,0 +1,37 @@
+@use '../utils' as *;
+
+  /*
+ ::::::::::::::::::::::::::
+  CHOOSE AREA CSS
+ ::::::::::::::::::::::::::
+ */
+
+ // === choose area 1 ====
+
+.choose4-box {
+  .icon {
+    background-color: #F1F5FD;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all .4s;
+  }
+
+  &:hover {
+    .icon {
+      transition: all .4s;
+      background-color: var(--vtc-bg-main4);
+    }
+  }
+}
+
+// === choose area 1 ====
+
+
+/*
+ ::::::::::::::::::::::::::
+  CHOOSE AREA CSS
+ ::::::::::::::::::::::::::
+ */

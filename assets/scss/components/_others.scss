@@ -1,0 +1,621 @@
+@use '../utils' as *;
+
+  /*
+ ::::::::::::::::::::::::::
+  OTHERS AREA CSS
+ ::::::::::::::::::::::::::
+ */
+
+// ==== solutions 1 sytle ====
+
+.solution1 {
+  .images {
+    position: relative;
+    .image {
+      img {
+        width: 100%;
+      }
+
+      @media #{$md} {
+        height: 300px;
+
+        img {
+          width: auto;
+        }
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-image: url(../img/bg/solution-img-bg.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+      transform: scale(1.4);
+      z-index: -2;
+      animation-name: round-circle5;
+      animation-duration: 72s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: linear;
+    }
+  }
+
+  .icon-boxs-all1 {
+    margin-top: -30px;
+
+    @media #{$md} {
+      margin-bottom: 50px;
+    }
+    @media #{$xs} {
+      margin-bottom: 50px;
+    }
+  }
+
+  .icon-boxs-all2 {
+    margin-top: -30px;
+
+    @media #{$md} {
+      margin-top: 50px;
+    }
+    @media #{$xs} {
+      margin-top: 50px;
+    }
+  }
+
+  .icon-box {
+    display: flex;
+    align-items: center;
+    margin-left: 58px;
+    width: 325px;
+
+    &.middle {
+      margin: 100px 0px 100px 120px;
+
+      @media #{$md} {
+        margin: 40px 0px 40px 0px;
+      }
+      @media #{$xs} {
+        margin: 40px 0px 40px 0px;
+      }
+    }
+
+    &.left {
+      .text {
+        text-align: end;
+        a {
+          transition: all .4s;
+  
+          &:hover {
+            transition: all .4s;
+            color: #4A43DD;
+          }
+        }
+      }
+    }
+
+    &.right {
+      .text {
+        text-align: start;
+        a {
+          transition: all .4s;
+          &:hover {
+            transition: all .4s;
+            color: #4A43DD;
+          }
+        }
+      }
+    }
+
+    &.color1 {
+      .icon {
+        height: 80px;
+        width: 80px;
+        line-height: 80px;
+        text-align: center;
+        background-color: #4A43DD;
+        border-radius: 50%;
+        margin-left: 16px;
+        transition: all .4s;
+
+        img {
+          transition: all .4s;
+        }
+      }
+
+      &:hover {
+        .icon {
+          background-color: #4A43DD;
+          transition: all .4s;
+
+          img {
+            transition: all .4s;
+            transform: rotateY(180deg);
+          }
+        }
+      }
+    }
+
+    &.color2 {
+      .icon {
+        height: 80px;
+        width: 80px;
+        line-height: 80px;
+        text-align: center;
+        background-color: #10002B;
+        border-radius: 50%;
+        margin-left: 16px;
+        transition: all .4s;
+
+        img {
+          transition: all .4s;
+        }
+      }
+
+      &:hover {
+        .icon {
+          background-color: #4A43DD;
+          transition: all .4s;
+
+          img {
+            transition: all .4s;
+            transform: rotateY(180deg);
+          }
+        }
+      }
+      
+    }
+
+    &.unic {
+      margin-left: 100px;
+      margin-right: -90px;
+
+      @media #{$md} {
+        margin-right: 0;
+        margin-left: 0;
+      }
+      @media #{$xs} {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+  }
+
+
+  .icon-box2 {
+    display: flex;
+    align-items: center;
+    margin-right: 58px;
+    width: 325px;
+
+    @media #{$md} {
+      margin-right: 0px;
+    }
+
+    @media #{$xs} {
+      margin-right: 0px;
+    }
+
+    
+
+    &.middle {
+      margin: 100px 120px 100px 0px;
+
+      @media #{$md} {
+        margin: 40px 0px 40px 0px;
+      }
+      @media #{$xs} {
+        margin: 40px 0px 40px 0px;
+      }
+    }
+
+    &.left {
+      .text {
+        text-align: end;
+        a {
+          transition: all .4s;
+  
+          &:hover {
+            transition: all .4s;
+            color: #4A43DD;
+          }
+        }
+      }
+    }
+
+    &.right {
+      .text {
+        text-align: start;
+        a {
+          transition: all .4s;
+          &:hover {
+            transition: all .4s;
+            color: #4A43DD;
+          }
+        }
+      }
+    }
+
+    &.color1 {
+      .icon {
+        height: 80px;
+        width: 80px;
+        line-height: 80px;
+        text-align: center;
+        background-color: #4A43DD;
+        border-radius: 50%;
+        margin-right: 16px;
+        transition: all .4s;
+
+        img {
+          transition: all .4s;
+        }
+      }
+
+      &:hover {
+        .icon {
+          background-color: #10002B;
+          transition: all .4s;
+
+          img {
+            transition: all .4s;
+            transform: rotateY(180deg);
+          }
+        }
+      }
+    }
+
+    &.color2 {
+      .icon {
+        height: 80px;
+        width: 80px;
+        line-height: 80px;
+        text-align: center;
+        background-color: #10002B;
+        border-radius: 50%;
+        margin-right: 16px;
+        transition: all .4s;
+
+        img {
+          transition: all .4s;
+        }
+      }
+
+      &:hover {
+        .icon {
+          background-color: #4A43DD;
+          transition: all .4s;
+
+          img {
+            transition: all .4s;
+            transform: rotateY(180deg);
+          }
+        }
+      }
+    }
+
+    &.unic {
+      margin-right: 80px;
+      margin-left: -60px;
+
+      @media #{$md} {
+        margin-right: 0;
+        margin-left: 0;
+      }
+
+      @media #{$xs} {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+  }
+  
+}
+
+
+@keyframes round-circle5 {
+  0% {
+      transform: rotate(0deg) scale(1.4);
+  }
+  100% {
+      transform: rotate(1000deg) scale(1.4);
+  }
+}
+
+@media #{$md} {
+  @keyframes round-circle5 {
+    0% {
+        transform: rotate(0deg) scale(1.1);
+    }
+    100% {
+        transform: rotate(1000deg) scale(1.1);
+    }
+  }
+}
+
+@media #{$xs} {
+  @keyframes round-circle5 {
+    0% {
+        transform: rotate(0deg) scale(1.1);
+    }
+    100% {
+        transform: rotate(1000deg) scale(1.1);
+    }
+  }
+}
+
+
+// ==== solutions 1 sytle ====
+
+// ==== video area 1 sytle ====
+
+.video-area1 {
+  min-height: 550px;
+  border-radius: 8px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 60px;
+  background-attachment: fixed;
+}
+
+.process-bottom-box {
+  background-color: #fff;
+  border-radius: 8px;
+  margin-top: 60px;
+  padding: 24px 32px;
+  transition: all .4s;
+  .icon {
+    background-color: #F1F5FD;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 50%;
+    margin: auto;
+    transition: all .4s;
+
+    img {
+      transition: all .4s;
+    }
+  }
+
+  &:hover {
+    transition: all .4s;
+    transform: translateY(-10px);
+
+    .icon {
+      img {
+        transition: all .4s;
+        transform: rotateY(180deg);
+        filter: brightness(0) invert(1);
+      }
+      background-color: #4A43DD;
+      transition: all .4s;
+    }
+  }
+}
+
+// ==== video area 1 sytle ====
+
+// ==== fact 2 sytle ====
+
+.circle-progress-box2 {
+  .progresbar {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+  }
+  .progressbar {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+  }
+  .circle {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      margin-top: 10px;
+      display: inline-block;
+      position: relative;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+  }
+  .circle canvas {
+      vertical-align: middle;
+      border-radius: 50%;
+  }    
+  .circle div {
+    position: absolute;
+    top: 33%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: var(--SEO-Marketing-Text-Color, #0B0314);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 100% */
+    margin-top: 15px;
+  }
+  .circle strong i {
+      font-style: normal;
+      font-size: 0.6em;
+      font-weight: normal;
+  }
+  .circle span {
+      display: block;
+      color: var(--SEO-Marketing-Text-Color, #0B0314);
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px; /* 100% */
+  }
+  .circle:before {
+      position: absolute;
+      top: 65%;
+      right: 17%;
+      font-size: 15px;
+      font-weight: bold;
+      color: #3B32F6;
+  }
+}
+
+// ==== fact 2 sytle ====
+
+// ==== research 2 sytle ====
+
+
+
+.research {
+  .image-container {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    height: 525px;
+
+    &:nth-child(2) {
+      margin-bottom: 0;
+    }
+}
+
+.image-container .image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .6s;
+    opacity: 0;
+    transform: rotateY(54deg);
+
+    .shape {
+      position: absolute;
+      top: -30px;
+      left: -30px;
+      z-index: -1;
+    }
+}
+
+.image-container .image.active {
+    opacity: 1;
+    transition: all .5s;
+    transform: rotateY(0deg);
+}
+
+.list-container {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.list-container ul {
+    list-style: none;
+}
+
+.list-container li {
+    padding: 28px 0;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #6C757D;
+
+    span {
+      display: inline-block;
+      transform: rotate(-45deg);
+    }
+
+    &:nth-last-child(1) {
+      border-bottom: 1px solid #6C757D;
+    }
+}
+
+.list-container li:hover {
+    color: #0A0571;
+}
+
+}
+
+// ==== research 2 sytle ====
+
+// ==== fact 3 sytle ====
+
+.fact3-images {
+  left: 0;
+  height: 460px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 45%;
+    height: 100%;
+    background-image: url(../img/others/fact3-image.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: center;
+
+    @media #{$md} {
+      width: 90%;
+      margin: 0px 40px;
+    }
+    @media #{$xs} {
+      width: 80%;
+      margin: 0px 40px;
+    }
+  }
+
+  @media #{$xxl} {
+    height: 400px;
+  }
+
+  @media #{$xs} {
+    height: 250px;
+  }
+
+  .arrow {
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    bottom: 82px;
+    left: 42%;
+    transition: all .3s;
+    z-index: 5;
+    margin-left: -11px;
+
+    @media #{$xxl} {
+      bottom: 143px;
+      left: 42%;
+      margin-left: -20px;
+    }
+
+    @media #{$md} {
+      left: auto;
+      right: 30px;
+      bottom: auto;
+      top: 413px;
+    }
+    @media #{$xs} {
+      left: auto;
+      right: 20px;
+      bottom: auto;
+      top: 250px;
+    }
+  }
+}
+
+// ==== fact 3 sytle ====
+
+  /*
+ ::::::::::::::::::::::::::
+  OTHERS AREA CSS
+ ::::::::::::::::::::::::::
+ */
