@@ -8695,7 +8695,7 @@ body.body {
 }
 
 .site-logo {
-  max-width: 130px;
+  /* max-width: 130px; */
   height: auto;
   display: flex;
   align-items: center;
