@@ -3231,7 +3231,7 @@ body.body {
 }
 @media (max-width: 767px) {
   .about1-images {
-    height: 1000px;
+    height: fit-content;
   }
 }
 @media (max-width: 767px) {
