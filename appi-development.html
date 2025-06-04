@@ -32,6 +32,46 @@
             margin-top: 100px;
         }
 
+        .curcumin {
+            position: relative;
+            background-image: url(./assets/img/appi-bg.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 2rem;
+            overflow: hidden;
+            margin-bottom: 30px;
+            /* important for containing the pseudo element */
+        }
+
+        /* Light overlay behind content */
+        .curcumin::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.6);
+            /* Light overlay */
+            z-index: 0;
+        }
+
+        /* Content stays above overlay */
+        .content-box {
+            position: relative;
+            z-index: 1;
+            padding: 2rem;
+            border-radius: 12px;
+        }
+
+        .table>:not(caption)>*>* {
+            background-color: #ffffff;
+
+        }
+
+
+
         @media screen and (max-width:575px) {
             .aboutLaboeratoryImage {
                 margin-top: 20px;
@@ -40,6 +80,30 @@
 
         .ceoMessage p {
             font-size: 16px;
+        }
+
+        @media screen and (max-width:767px) {
+            .table-bordered>:not(caption)>*>* {
+                font-size: 12px;
+            }
+
+            .content-box {
+                padding: 0px;
+            }
+
+            .row.my-5 {
+                gap: 30px;
+            }
+
+            .curcumin li {
+                font-size: 16px;
+                color: #000 !important;
+            }
+
+            .curcumin h5 {
+                font-size: 18px;
+                color: #000 !important;
+            }
         }
     </style>
 </head>
@@ -102,17 +166,17 @@
 
 
                                     <li class="dropdown-menu-parrent"><a href="research.html" class="main1">Research <i
-                        class="fa-solid fa-angle-down"></i></a>
-                   <ul class="sub-menu">
-                          <li><a href="Nano-Phytopharmaceutical-development.html">Discovery Pipeline
-</a></li>
-                          <li><a href="appi-development.html">APPI Development </a></li>
-                        </ul>
-                  </li>
+                                                class="fa-solid fa-angle-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="Nano-Phytopharmaceutical-development.html">Discovery Pipeline
+                                                </a></li>
+                                            <li><a href="appi-development.html">APPI Development </a></li>
+                                        </ul>
+                                    </li>
 
                                     <li><a href="patents.html" class="main1">Patents</a></li>
 
-                                 <!-- <li class="has-dropdown has-dropdown1"><a href="blog.html" class="main">Blog</a>
+                                    <!-- <li class="has-dropdown has-dropdown1"><a href="blog.html" class="main">Blog</a>
                     <ul class="sub-menu">
                         <li><a href="blog.html">Blog 01</a></li>
                         <li><a href="blog2.html">Blog 02</a></li>
@@ -177,14 +241,14 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                 <li class="dropdown-menu-parrent"><a href="research.html" class="main1">Research <i
-                        class="fa-solid fa-angle-down"></i></a>
-                   <ul class="sub-menu">
-                          <li><a href="Nano-Phytopharmaceutical-development.html">Discovery Pipeline
-</a></li>
-                          <li><a href="appi-development.html">APPI Development </a></li>
-                        </ul>
-                  </li>
+                <li class="dropdown-menu-parrent"><a href="research.html" class="main1">Research <i
+                            class="fa-solid fa-angle-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="Nano-Phytopharmaceutical-development.html">Discovery Pipeline
+                            </a></li>
+                        <li><a href="appi-development.html">APPI Development </a></li>
+                    </ul>
+                </li>
 
                 <!-- <li class="has-dropdown"><a href="#">Single Research</a>
           <ul class="sub-menu">
@@ -293,22 +357,659 @@
     <!--=====ABOUT AREA START=======-->
 
     <div class="about-page-sec1 sp _relative bg1">
-        <div class="container">
-          
-            <div class="row align-items-center">
-                <!-- Image Column -->
-                <div class="col-md-12 text-center">
-                    <img class="w-full" src="./assets/img/Slide1.JPG" alt="About Image"> <br><br>
-                    <img class="w-full" src="./assets/img/Slide2.JPG" alt="About Image"> <br><br>
-                    <img class="w-full" src="./assets/img/Slide3.JPG" alt="About Image"> <br><br>
-                    <img class="w-full" src="./assets/img/Slide4.JPG" alt="About Image"> <br><br>
-                    <img class="w-full" src="./assets/img/Slide5.JPG" alt="About Image"> <br><br>
+        <div class="container-lg">
+            <div class="curcumin ">
+                <div class="content-box">
+                    <div class="topSection">
+                        <h1 class="text-center fw-bold pb-md-5 text-white">Curcumin APPI</h1>
+                        <div class="row my-5">
+                            <div class="col-md-6 text-center">
+                                <img src="./assets/img/curcumin.png" alt="">
+
+                                <h4 class="fw-bold mt-5">Curcumin</h4>
+                                <h5>Source : <span style="font-style: italic;font-size: 14px;">Curcuma longa
+                                    </span></h5>
+                            </div>
+                            <div class="col-md-6 p-md-5">
+                                <div class="curcuminDesc text-white">
+                                    <div class="mb-4">
+                                        <h5 class="fw-semibold text-light mb-3 border-bottom pb-2">✅ Patented
+                                            Nanoformulations
+                                        </h5>
+                                        <ul class="styled-list">
+                                            <li><span class="icon">✔</span> Nanosponges – Improved solubility and
+                                                entrapment
+                                                efficiency</li>
+                                            <li><span class="icon">✔</span> Phytosomes – Enhanced membrane permeability
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="mb-4">
+                                        <h5 class="fw-semibold text-light mb-3 border-bottom pb-2">❌ Limitations of
+                                            Conventional
+                                            Curcumin</h5>
+                                        <ul class="styled-list">
+                                            <li><span class="icon">✖</span> Poor bioavailability</li>
+                                            <li><span class="icon">✖</span> Limited chemical stability</li>
+                                            <li><span class="icon">✖</span> Short plasma half-life</li>
+                                            <li><span class="icon">✖</span> Low gastrointestinal permeability</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="table1">
+                        <h5 class="fw-bold mb-2">Physical Chemical Characterization</h5>
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped text-center align-middle">
+                                <thead class="table-primary">
+                                    <tr>
+                                        <th rowspan="2">Material</th>
+                                        <th rowspan="2">EE</th>
+                                        <th colspan="3">Physical characters</th>
+                                        <th rowspan="2">WATER Solubility (µg/mL)</th>
+                                        <th rowspan="2">Stability<br>(6 months)</th>
+                                    </tr>
+                                    <tr>
+                                        <th>PS (nm)</th>
+                                        <th>ZP</th>
+                                        <th>PDI</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>API</td>
+                                        <td>—</td>
+                                        <td>NA</td>
+                                        <td>—</td>
+                                        <td>—</td>
+                                        <td>3</td>
+                                        <td>20%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nanosponges</td>
+                                        <td>98%</td>
+                                        <td>161</td>
+                                        <td>-37</td>
+                                        <td>0.46</td>
+                                        <td>78<br><small>(&gt; 26 fold)</small></td>
+                                        <td>94%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Phytosomes</td>
+                                        <td>99%</td>
+                                        <td>231</td>
+                                        <td>-56</td>
+                                        <td>0.61</td>
+                                        <td>41<br><small>(&gt; 14 fold)</small></td>
+                                        <td>91%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="table-2 mt-4">
+                        <h5 class="fw-bold mb-2">In vitro Potency</h5>
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped text-center align-middle">
+                                <thead class="table-primary">
+                                    <tr>
+                                        <th rowspan="2">Category</th>
+                                        <th rowspan="2">Assay</th>
+                                        <th colspan="3">Inhibition, IC<sub>50</sub> (µg/mL)</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Curcumin API</th>
+                                        <th>Nanosponges</th>
+                                        <th>Phytosomes</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Anti Oxidant -->
+                                    <tr>
+                                        <td rowspan="2" class="text-start"><strong>Anti Oxidant</strong></td>
+                                        <td>PFRAP</td>
+                                        <td>72</td>
+                                        <td>52</td>
+                                        <td>28</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DPPH</td>
+                                        <td>18</td>
+                                        <td>54</td>
+                                        <td>65</td>
+                                    </tr>
+
+                                    <!-- Anti Diabetic -->
+                                    <tr>
+                                        <td rowspan="2" class="text-start"><strong>Anti Diabetic</strong></td>
+                                        <td>α-Amylase</td>
+                                        <td>39</td>
+                                        <td>10</td>
+                                        <td>19</td>
+                                    </tr>
+                                    <tr>
+                                        <td>α-Glucosidase</td>
+                                        <td>56</td>
+                                        <td>21</td>
+                                        <td>30</td>
+                                    </tr>
+
+                                    <!-- Anti Cancer -->
+                                    <tr>
+                                        <td rowspan="2" class="text-start"><strong>Anti Cancer</strong></td>
+                                        <td>HCT116</td>
+                                        <td>126</td>
+                                        <td>46</td>
+                                        <td>73</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MDA-MB 231</td>
+                                        <td>264</td>
+                                        <td>21</td>
+                                        <td>38</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="curcumin">
+                <div class="content-box">
+                    <div class="topSection">
+                        <h1 class="text-center fw-bold pb-md-5 text-white text-white">Silybin APPI</h1>
+                        <div class="row my-5">
+                            <div class="col-md-6 text-center">
+                                <img src="./assets/img/silybin.png" alt="Silybin Molecule">
+                                <h4 class="fw-bold mt-5">Silybin</h4>
+                                <h5>Source : <span style="font-style: italic;font-size: 14px;">Silybum marianum</span>
+                                </h5>
+                            </div>
+                            <div class="col-md-6 p-md-5">
+                                <div class="curcuminDesc text-white">
+                                    <div class="mb-4">
+                                        <h5 class="fw-semibold text-light mb-3 border-bottom pb-2">✅ Patented
+                                            Nanoformulations
+                                        </h5>
+                                        <ul class="styled-list">
+                                            <li><span class="icon">✔</span> Nanosponges – Boosted cellular uptake and
+                                                sustained
+                                                release</li>
+                                            <li><span class="icon">✔</span> Phytosomes – Enhanced liver targeting and
+                                                permeability</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mb-4">
+                                        <h5 class="fw-semibold text-light mb-3 border-bottom pb-2">❌ Limitations of
+                                            Conventional
+                                            Silybin</h5>
+                                        <ul class="styled-list">
+                                            <li><span class="icon">✖</span> Poor bioavailability</li>
+                                            <li><span class="icon">✖</span> Short half life</li>
+                                            <li><span class="icon">✖</span> Limited target specificity</li>
+                                            <li><span class="icon">✖</span> Low absorption in the GI tract</li>
+                                            <li><span class="icon">✖</span> Inconsistent therapeutic outcomes</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Physical Chemical Characterization Table -->
+                    <div class="table1">
+                        <h5 class="fw-bold mb-2">Physical Chemical Characterization</h5>
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped text-center align-middle">
+                                <thead class="table-primary">
+                                    <tr>
+                                        <th rowspan="2">Material</th>
+                                        <th rowspan="2">EE</th>
+                                        <th colspan="3">Physical characters</th>
+                                        <th rowspan="2">WATER Solubility (µg/mL)</th>
+                                        <th rowspan="2">Stability (6 months)</th>
+                                    </tr>
+                                    <tr>
+                                        <th>PS (nm)</th>
+                                        <th>ZP</th>
+                                        <th>PDI</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>API</td>
+                                        <td>NA</td>
+                                        <td>NA</td>
+                                        <td>—</td>
+                                        <td>—</td>
+                                        <td>6</td>
+                                        <td>40%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nanosponges</td>
+                                        <td>98%</td>
+                                        <td>268</td>
+                                        <td>-18.9</td>
+                                        <td>0.542</td>
+                                        <td>193<br><small>(&gt; 30 fold)</small></td>
+                                        <td>95%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Phytosomes</td>
+                                        <td>94%</td>
+                                        <td>186</td>
+                                        <td>-24.6</td>
+                                        <td>0.765</td>
+                                        <td>98<br><small>(&gt; 15 fold)</small></td>
+                                        <td>82%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- In vitro Potency Table -->
+                    <div class="table-2 mt-4">
+                        <h5 class="fw-bold mb-2">In vitro Potency</h5>
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped text-center align-middle">
+                                <thead class="table-primary">
+                                    <tr>
+                                        <th rowspan="2">Category</th>
+                                        <th rowspan="2">Assay</th>
+                                        <th colspan="3">Inhibition, IC<sub>50</sub> (µg/mL)</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Silybin APPI</th>
+                                        <th>Nanosponges</th>
+                                        <th>Phytosomes</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2" class="text-start"><strong>Anti Oxidant</strong></td>
+                                        <td>PFRAP</td>
+                                        <td>8</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DPPH</td>
+                                        <td>69</td>
+                                        <td>19</td>
+                                        <td>32</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2" class="text-start"><strong>Anti Diabetic</strong></td>
+                                        <td>α-Amylase</td>
+                                        <td>14</td>
+                                        <td>2</td>
+                                        <td>6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>α-Glucosidase</td>
+                                        <td>5</td>
+                                        <td>0.3</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2" class="text-start"><strong>Anti Cancer</strong></td>
+                                        <td>HCT116</td>
+                                        <td>237</td>
+                                        <td>18</td>
+                                        <td>65</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MDA-MB 231</td>
+                                        <td>65</td>
+                                        <td>36</td>
+                                        <td>14</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
 
                 </div>
             </div>
+            <div class="curcumin">
+                <div class="content-box">
+                    <div class="topSection">
+                        <h1 class="text-center fw-bold pb-md-5 text-white">Resveratrol APPI</h1>
+                        <div class="row my-5">
+                            <div class="col-md-6 text-center">
+                                <img src="./assets/img/resveratol.png" alt="Resveratrol">
+                                <h4 class="fw-bold mt-5">Resveratrol</h4>
+                                <h5>Source : <span style="font-style: italic;font-size: 14px;">Red grapes and Polygonum
+                                        cuspidatum</span></h5>
+                            </div>
+                            <div class="col-md-6 p-md-5">
+                                <div class="curcuminDesc text-white">
+                                    <div class="mb-4">
+                                        <h5 class="fw-semibold text-light mb-3 border-bottom pb-2">✅ Patented
+                                            Nanoformulations
+                                        </h5>
+                                        <ul class="styled-list">
+                                            <li><span class="icon">✔</span> Nanosponges – Enhanced water solubility and
+                                                prolonged release</li>
+                                            <li><span class="icon">✔</span> Phytosomes – Improved membrane permeability
+                                                and
+                                                metabolic stability</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mb-4">
+                                        <h5 class="fw-semibold text-light mb-3 border-bottom pb-2">❌ Limitations of
+                                            Conventional
+                                            Resveratrol</h5>
+                                        <ul class="styled-list">
+                                            <li><span class="icon">✖</span> Poor bioavailability</li>
+                                            <li><span class="icon">✖</span> Short half life</li>
+                                            <li><span class="icon">✖</span> Limited water solubility</li>
+                                            <li><span class="icon">✖</span> Low absorption</li>
+                                            <li><span class="icon">✖</span> Low stability</li>
+                                        </ul>
+                                    </div>
+                                </div>
 
+                            </div>
+                        </div>
+
+                        <!-- Physical Chemical Characterization Table -->
+                        <div class="table1">
+                            <h5 class="fw-bold mb-2">Physical Chemical Characterization</h5>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped text-center align-middle">
+                                    <thead class="table-primary">
+                                        <tr>
+                                            <th rowspan="2">Material</th>
+                                            <th rowspan="2">EE</th>
+                                            <th colspan="3">Physical characters</th>
+                                            <th rowspan="2">WATER Solubility (µg/mL)</th>
+                                            <th rowspan="2">Stability<br>(6 months)</th>
+                                        </tr>
+                                        <tr>
+                                            <th>PS (nm)</th>
+                                            <th>ZP</th>
+                                            <th>PDI</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>API</td>
+                                            <td>—</td>
+                                            <td>NA</td>
+                                            <td>—</td>
+                                            <td>—</td>
+                                            <td>50</td>
+                                            <td>60%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nanosponges</td>
+                                            <td>98%</td>
+                                            <td>330</td>
+                                            <td>-28.8</td>
+                                            <td>0.515</td>
+                                            <td>194<br><small>(&gt; 4 fold)</small></td>
+                                            <td>95%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Phytosomes</td>
+                                            <td>95%</td>
+                                            <td>265</td>
+                                            <td>-34.6</td>
+                                            <td>0.714</td>
+                                            <td>140<br><small>(&gt; 3 fold)</small></td>
+                                            <td>90%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- In vitro Potency Table -->
+                        <div class="table-2 mt-4">
+                            <h5 class="fw-bold mb-2">In vitro Potency</h5>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped text-center align-middle">
+                                    <thead class="table-primary">
+                                        <tr>
+                                            <th rowspan="2">Category</th>
+                                            <th rowspan="2">Assay</th>
+                                            <th colspan="3">Inhibition, IC<sub>50</sub> (µg/mL)</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Resveratrol APPI</th>
+                                            <th>Nanosponges</th>
+                                            <th>Phytosomes</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="2" class="text-start"><strong>Anti Oxidant</strong></td>
+                                            <td>PFRAP</td>
+                                            <td>21</td>
+                                            <td>2</td>
+                                            <td>7</td>
+                                        </tr>
+                                        <tr>
+                                            <td>DPPH</td>
+                                            <td>84</td>
+                                            <td>46</td>
+                                            <td>40</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2" class="text-start"><strong>Anti Diabetic</strong></td>
+                                            <td>α-Amylase</td>
+                                            <td>32</td>
+                                            <td>7</td>
+                                            <td>14</td>
+                                        </tr>
+                                        <tr>
+                                            <td>α-Glucosidase</td>
+                                            <td>77</td>
+                                            <td>2</td>
+                                            <td>8</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2" class="text-start"><strong>Anti Cancer</strong></td>
+                                            <td>HCT116</td>
+                                            <td>81</td>
+                                            <td>34</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>MDA-MB 231</td>
+                                            <td>260</td>
+                                            <td>70</td>
+                                            <td>52</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="curcumin">
+                <div class="content-box">
+                    <div class="topSection">
+                        <h1 class="text-center fw-bold pb-md-5 text-white">Quercetin APPI</h1>
+                        <div class="row my-5">
+                            <div class="col-md-6 text-center">
+                                <img src="./assets/img/quercetin.png" alt="Quercetin">
+                                <h4 class="fw-bold mt-5">Quercetin</h4>
+                                <h5>Source : <span style="font-style: italic;font-size: 14px;">Fruits, Vegetables,
+                                        etc.</span>
+                                </h5>
+                            </div>
+                            <div class="col-md-6 p-md-5">
+                                <div class="curcuminDesc text-white">
+                                    <div class="mb-4">
+                                        <h5 class="fw-semibold text-light mb-3 border-bottom pb-2">✅ Patented
+                                            Nanoformulations
+                                        </h5>
+                                        <ul class="styled-list">
+                                            <li><span class="icon">✔</span> Nanosponges – Improved stability and
+                                                enhanced
+                                                solubility</li>
+                                            <li><span class="icon">✔</span> Phytosomes – Increased cellular uptake and
+                                                bioefficacy</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mb-4">
+                                        <h5 class="fw-semibold text-light mb-3 border-bottom pb-2">❌ Limitations of
+                                            Conventional
+                                            Quercetin</h5>
+                                        <ul class="styled-list">
+                                            <li><span class="icon">✖</span> Poor bioavailability</li>
+                                            <li><span class="icon">✖</span> Short half life</li>
+                                            <li><span class="icon">✖</span> Metabolic instability</li>
+                                            <li><span class="icon">✖</span> Low absorption</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Physical Chemical Characterization Table -->
+                        <div class="table1">
+                            <h5 class="fw-bold mb-2">Physical Chemical Characterization</h5>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped text-center align-middle">
+                                    <thead class="table-primary">
+                                        <tr>
+                                            <th rowspan="2">Material</th>
+                                            <th rowspan="2">EE</th>
+                                            <th colspan="3">Physical characters</th>
+                                            <th rowspan="2">WATER Solubility (µg/mL)</th>
+                                            <th rowspan="2">Stability<br>(60 days)</th>
+                                        </tr>
+                                        <tr>
+                                            <th>PS (nm)</th>
+                                            <th>ZP</th>
+                                            <th>PDI</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>API</td>
+                                            <td>—</td>
+                                            <td>NA</td>
+                                            <td>—</td>
+                                            <td>—</td>
+                                            <td>2</td>
+                                            <td>30%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nanosponges</td>
+                                            <td>101%</td>
+                                            <td>149</td>
+                                            <td>-38</td>
+                                            <td>0.44</td>
+                                            <td>26<br><small>(&gt;13 fold)</small></td>
+                                            <td>93%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Phytosomes</td>
+                                            <td>92%</td>
+                                            <td>102</td>
+                                            <td>-42</td>
+                                            <td>0.53</td>
+                                            <td>34<br><small>(&gt;17 fold)</small></td>
+                                            <td>77%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- In vitro Potency Table -->
+                        <div class="table-2 mt-4">
+                            <h5 class="fw-bold mb-2">In vitro Potency</h5>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped text-center align-middle">
+                                    <thead class="table-primary">
+                                        <tr>
+                                            <th rowspan="2">Category</th>
+                                            <th rowspan="2">Assay</th>
+                                            <th colspan="3">Inhibition, IC<sub>50</sub> (µg/mL)</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Quercetin APPI</th>
+                                            <th>Nanosponges</th>
+                                            <th>Phytosomes</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="2" class="text-start"><strong>Anti Oxidant</strong></td>
+                                            <td>PFRAP</td>
+                                            <td>58</td>
+                                            <td>20</td>
+                                            <td>36</td>
+                                        </tr>
+                                        <tr>
+                                            <td>DPPH</td>
+                                            <td>90</td>
+                                            <td>42</td>
+                                            <td>27</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2" class="text-start"><strong>Anti Diabetic</strong></td>
+                                            <td>α-Amylase</td>
+                                            <td>11</td>
+                                            <td>2</td>
+                                            <td>8</td>
+                                        </tr>
+                                        <tr>
+                                            <td>α-Glucosidase</td>
+                                            <td>41</td>
+                                            <td>23</td>
+                                            <td>17</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2" class="text-start"><strong>Anti Cancer</strong></td>
+                                            <td>HCT116</td>
+                                            <td>219</td>
+                                            <td>66</td>
+                                            <td>98</td>
+                                        </tr>
+                                        <tr>
+                                            <td>MDA-MB 231</td>
+                                            <td>116</td>
+                                            <td>82</td>
+                                            <td>60</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <h2 class="text-center fw-bold py-2 py-md-5">PIPE LINE</h2>
+                <!-- Image Column -->
+                <div class="col-md-12 text-center">
+                    <img class="w-full" src="./assets/img/Slide5.JPG" alt="About Image"> <br><br>
+                </div>
+            </div>
         </div>
     </div>
+
+
+
+
+
     <div class="cta1 sp _relative" style="background-color: #4A43DD;">
         <div class="container">
             <div class="row align-items-center">
