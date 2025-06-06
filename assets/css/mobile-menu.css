@@ -84,9 +84,9 @@ Desc:
         align-items: center;
         justify-content: space-between;
     }
-    .mobile-header-elements .mobile-logo {
+    /* .mobile-header-elements .mobile-logo {
         width: 160px;
-    }
+    } */
     
     .mobile-nav-icon {
         font-size: 23px; 
@@ -125,9 +125,9 @@ Desc:
         opacity: 0;
         transition: all .3s;
     }
-    .mobile-sidebar .logo-m {
+    /* .mobile-sidebar .logo-m {
         width: 140px;
-    }
+    } */
 
     .mobile-sidebar.mobile-sidebar2 {
         position: fixed;
@@ -473,4 +473,13 @@ Desc:
     border-radius: 50%;
     text-align: center;
     line-height: 0;
+}
+    .tagline{
+    font-size: 14px;
+}
+@media screen and (max-width:575px){
+     .tagline{
+    font-size: 12.5px;
+    font-weight: 400;
+}   
 }
