@@ -489,11 +489,8 @@ Desc:
 .tagline {
     font-size: 14px;
     font-family: 'Georgia', serif;
-    /* Or try 'Playfair Display', 'Roboto Slab', etc. */
     font-style: italic;
-    /* font-size: 0.9rem; */
     color: #555;
-    /* Softer than pure black */
     letter-spacing: 0.3px;
 }
 
